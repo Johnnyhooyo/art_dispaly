@@ -6,13 +6,14 @@
         <groupId>com.art</groupId>
         <artifactId>mm-art</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>art-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>art-service</name>
     <description>Demo project for Spring Boot</description>
-
+    <packaging>pom</packaging>
     <properties>
         <java.version>1.8</java.version>
     </properties>

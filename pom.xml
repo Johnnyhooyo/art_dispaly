@@ -12,7 +12,7 @@
     <artifactId>mm-art</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>mm-art</name>
-
+    <packaging>pom</packaging>
     <modules>
         <module>art-api</module>
         <module>art-service</module>
