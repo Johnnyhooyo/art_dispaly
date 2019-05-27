@@ -1,8 +1,6 @@
 package com.art.artweb;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author dibulidohu
@@ -14,12 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/test")
 public class TestController {
 
-    @RequestMapping(value = "ok", method = {RequestMethod.POST})
+    @PostMapping(value = "ok")
     public String test() {
         return "ok";
     }
 
-    @RequestMapping(value = "hi", method = {RequestMethod.GET})
+    @GetMapping(value = "hi")
     public String hi() {
         return "hi";
     }
