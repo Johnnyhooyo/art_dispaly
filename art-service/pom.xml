@@ -20,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>com.art</groupId>
-            <artifactId>mm-art</artifactId>
+            <artifactId>art-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
