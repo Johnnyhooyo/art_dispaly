@@ -1,0 +1,14 @@
+server:
+  port: 10950
+spring:
+  application:
+    name: mm-art
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10001/eureka/
+    fetch-registry: false #缓存数据
+    registry-fetch-interval-seconds: 30 #如果开启缓存 多久和服务端同步一次数据
+    register-with-eureka: true # 是否注册到服务端
+  instance:
+    lease-renewal-interval-in-seconds: 30 # 心跳频率  Eureka Client的最多需要[eureka.instance.lease-renewal-interval-in-seconds + eureka.client.registry-fetch-interval-seconds]时间才发现服务已经下线或者上线
